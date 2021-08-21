@@ -52,7 +52,7 @@ public class Date {
         for (int y = 1970; y <= year - 1; y++)
             seconds += getNumberOfSecondFromYear(y);
 
-        for (int m = 1; m <= month - 1; m++)
+        for (int m = 1; m <= month; m++)
             seconds += getNumberOfSecondFromMonthYear(m, year);
 
         long timestamp = seconds - 1;
